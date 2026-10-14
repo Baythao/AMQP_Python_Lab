@@ -35,16 +35,16 @@ $env:RABBITMQ_VHOST = "/"
     + Terminal 2: `python producer_bai1.py` sau
 - `Kết quả dặt được:`
     + Terminal 2:
-        Đã kết nối RabbitMQ.
-        Nhấn Enter ở dòng nội dung để kết thúc.
-        Nhập nội dung chào mừng: Xin chao tu ung dung Python AMQP
-        Đã gửi: Xin chao tu ung dung Python AMQP - B22DCCN072 - Thào A Bảy
+       - Đã kết nối RabbitMQ.
+       - Nhấn Enter ở dòng nội dung để kết thúc.
+       - Nhập nội dung chào mừng: Xin chao tu ung dung Python AMQP
+       -  Đã gửi: Xin chao tu ung dung Python AMQP - B22DCCN072 - Thào A Bảy
         Nhập nội dung chào mừng: 
     + Terminal 1:
-        Đang lắng nghe queue: iot_lab_queue
-        Nhấn Ctrl+C để dừng.
-        Đã nhận message: Xin chao tu ung dung Python AMQP - B22DCCN072 - Thào A Bảy
-        Thời gian nhận: 15:45:45
+       - Đang lắng nghe queue: iot_lab_queue
+       - Nhấn Ctrl+C để dừng.
+       - Đã nhận message: Xin chao tu ung dung Python AMQP - B22DCCN072 - Thào A Bảy
+       - Thời gian nhận: 15:45:45
 
 ## 3. Bài 2 — Dữ liệu cảm biến IoT
 - Chạy: 
@@ -52,10 +52,10 @@ $env:RABBITMQ_VHOST = "/"
     + Terminal 2: `python sensor_producer_bai2.py` sau
 - `Kết quả dặt được:`
     + Terminal 2:
-        Đã kết nối RabbitMQ.
-        Đang mô phỏng các thiết bị cảm biến.
-        Queue: sensor_data_queue
-        Gửi dữ liệu mỗi 3 giây. Nhấn Ctrl+C để dừng.
+       - Đã kết nối RabbitMQ.
+       - Đang mô phỏng các thiết bị cảm biến.
+       - Queue: sensor_data_queue
+       - Gửi dữ liệu mỗi 3 giây. Nhấn Ctrl+C để dừng.
     
         Đã gửi dữ liệu:
         Thiết bị: sensor01
@@ -75,11 +75,11 @@ $env:RABBITMQ_VHOST = "/"
         Độ ẩm: 75.3 %
         JSON: {"device_id": "sensor03", "temperature": 37.1, "humidity": 75.3}
         --------------------------------------------------
-        Đã dừng cảm biến.
+       - Đã dừng cảm biến.
     
     + Terminal 1:
-        Đã kết nối RabbitMQ.
-        Đang chờ dữ liệu cảm biến. Nhấn Ctrl+C để dừng.
+       - Đã kết nối RabbitMQ.
+       - Đang chờ dữ liệu cảm biến. Nhấn Ctrl+C để dừng.
     
         Device: sensor01
         Temperature: 23.0
@@ -94,7 +94,7 @@ $env:RABBITMQ_VHOST = "/"
         Humidity: 75.3
         CANH BAO: Nhiet do cao
         -----------------------------------
-        Đã dừng giám sát.
+       - Đã dừng giám sát.
 
 Producer gửi JSON mỗi 3 giây vào `sensor_data_queue`. Nhiệt độ được sinh ngẫu nhiên trong khoảng 20–40°C, độ ẩm trong khoảng 30–80%. Message có thêm thời điểm gửi UTC. Consumer cảnh báo khi nhiệt độ lớn hơn 35°C hoặc độ ẩm nhỏ hơn 40%. Tự động mã cảm biến khi chạy
 
