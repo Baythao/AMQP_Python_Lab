@@ -57,43 +57,42 @@ $env:RABBITMQ_VHOST = "/"
        - Queue: sensor_data_queue
        - Gửi dữ liệu mỗi 3 giây. Nhấn Ctrl+C để dừng.
     
-        Đã gửi dữ liệu:
-        Thiết bị: sensor01
-        Nhiệt độ: 23.0 °C
-        Độ ẩm: 62.5 %
-        JSON: {"device_id": "sensor01", "temperature": 23.0, "humidity": 62.5}
-        --------------------------------------------------
-        Đã gửi dữ liệu:
-        Thiết bị: sensor02
-        Nhiệt độ: 21.5 °C
-        Độ ẩm: 43.5 %
-        JSON: {"device_id": "sensor02", "temperature": 21.5, "humidity": 43.5}
-        --------------------------------------------------
-        Đã gửi dữ liệu:
-        Thiết bị: sensor03
-        Nhiệt độ: 37.1 °C
-        Độ ẩm: 75.3 %
-        JSON: {"device_id": "sensor03", "temperature": 37.1, "humidity": 75.3}
-        --------------------------------------------------
+           + Đã gửi dữ liệu:
+            Thiết bị: sensor01
+            Nhiệt độ: 23.0 °C
+            Độ ẩm: 62.5 %
+            JSON: {"device_id": "sensor01", "temperature": 23.0, "humidity": 62.5}
+            --------------------------------------------------
+           + Đã gửi dữ liệu:
+            Thiết bị: sensor02
+            Nhiệt độ: 21.5 °C
+            Độ ẩm: 43.5 %
+            JSON: {"device_id": "sensor02", "temperature": 21.5, "humidity": 43.5}
+            --------------------------------------------------
+           + Đã gửi dữ liệu:
+            Thiết bị: sensor03
+            Nhiệt độ: 37.1 °C
+            Độ ẩm: 75.3 %
+            JSON: {"device_id": "sensor03", "temperature": 37.1, "humidity": 75.3}
+            --------------------------------------------------
        - Đã dừng cảm biến.
     
     + Terminal 1:
        - Đã kết nối RabbitMQ.
        - Đang chờ dữ liệu cảm biến. Nhấn Ctrl+C để dừng.
-    
-        Device: sensor01
-        Temperature: 23.0
-        Humidity: 62.5
-        -----------------------------------
-        Device: sensor02
-        Temperature: 21.5
-        Humidity: 43.5
-        -----------------------------------
-        Device: sensor03
-        Temperature: 37.1
-        Humidity: 75.3
-        CANH BAO: Nhiet do cao
-        -----------------------------------
+            + Device: sensor01
+            + Temperature: 23.0
+            + Humidity: 62.5
+            -----------------------------------
+            + Device: sensor02
+            + Temperature: 21.5
+            + Humidity: 43.5
+            -----------------------------------
+            + Device: sensor03
+            + Temperature: 37.1
+            + Humidity: 75.3
+            + CANH BAO: Nhiet do cao
+            -----------------------------------
        - Đã dừng giám sát.
 
 Producer gửi JSON mỗi 3 giây vào `sensor_data_queue`. Nhiệt độ được sinh ngẫu nhiên trong khoảng 20–40°C, độ ẩm trong khoảng 30–80%. Message có thêm thời điểm gửi UTC. Consumer cảnh báo khi nhiệt độ lớn hơn 35°C hoặc độ ẩm nhỏ hơn 40%. Tự động mã cảm biến khi chạy
