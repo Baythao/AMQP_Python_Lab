@@ -102,38 +102,39 @@ Producer gửi JSON mỗi 3 giây vào `sensor_data_queue`. Nhiệt độ đư�
     Đã kết nối RabbitMQ.
     Bắt đầu gửi cảnh báo.
 
-    [info] Đã gửi tới hai exchange: Hệ thống cảm biến hoạt động bình thường
-    [warning] Đã gửi tới hai exchange: Nhiệt độ phòng máy vượt ngưỡng cảnh báo
-    [critical] Đã gửi tới hai exchange: Cảm biến kho lạnh mất kết nối nghiêm trọng
+    [info] Đã gửi tới hai exchange: Hệ thống cảm biến hoạt động bình thường.
+    [warning] Đã gửi tới hai exchange: Nhiệt độ phòng máy vượt ngưỡng cảnh báo.
+    [critical] Đã gửi tới hai exchange: Cảm biến kho lạnh mất kết nối nghiêm trọng.
 
 + Terminal 3:
     Đã kết nối RabbitMQ.
     Đang nhận tất cả cảnh báo: info, warning, critical.File log: D:\BTL_HK1_2026-2027\IOT\amqp_python_lab\iot_alerts.log
     Nhấn Ctrl+C để dừng.
 
-    [all_alert_queue] [info] Đã nhận: Hệ thống cảm biến hoạt động bình thường
-    [all_alert_queue] [warning] Đã nhận: Nhiệt độ phòng máy vượt ngưỡng cảnh báo
-    [all_alert_queue] [critical] Đã nhận: Cảm biến kho lạnh mất kết nối nghiêm trọng
+    [all_alert_queue] [info] Đã nhận: Hệ thống cảm biến hoạt động bình thường.
+    [all_alert_queue] [warning] Đã nhận: Nhiệt độ phòng máy vượt ngưỡng cảnh báo.
+    [all_alert_queue] [critical] Đã nhận: Cảm biến kho lạnh mất kết nối nghiêm trọng.
 
 + Terminal 2:
     Đã kết nối RabbitMQ.
     [critical_queue] Đang chờ cảnh báo mức critical.
     Nhấn Ctrl+C để dừng.
 
-    [critical_queue] Đã nhận: Cảm biến kho lạnh mất kết nối nghiêm trọng
+    [critical_queue] Đã nhận: Cảm biến kho lạnh mất kết nối nghiêm trọng.
   
 + Terminal 1:
     Đã kết nối RabbitMQ.
     [warning_queue] Đang chờ cảnh báo mức warning.
     Nhấn Ctrl+C để dừng.
 
-    [warning_queue] Đã nhận: Nhiệt độ phòng máy vượt ngưỡng cảnh báo
+    [warning_queue] Đã nhận: Nhiệt độ phòng máy vượt ngưỡng cảnh báo.
 
 - Consumer mới ghi toàn bộ cảnh báo vào iot_alerts.log.
 + File log `iot_alerts.log:`
-    2026-10-14T16:41:19+07:00 | info | Hệ thống cảm biến hoạt động bình thường
-    2026-10-14T16:41:19+07:00 | warning | Nhiệt độ phòng máy vượt ngưỡng cảnh báo
-    2026-10-14T16:41:19+07:00 | critical | Cảm biến kho lạnh mất kết nối nghiêm trọng
+
+    2026-10-14T16:41:19+07:00 | info | Hệ thống cảm biến hoạt động bình thường.
+    2026-10-14T16:41:19+07:00 | warning | Nhiệt độ phòng máy vượt ngưỡng cảnh báo.
+    2026-10-14T16:41:19+07:00 | critical | Cảm biến kho lạnh mất kết nối nghiêm trọng.
 
 ## 5. File nộp
 - `producer_bai1.py`
