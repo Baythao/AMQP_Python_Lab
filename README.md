@@ -39,7 +39,7 @@ $env:RABBITMQ_VHOST = "/"
        - Nhấn Enter ở dòng nội dung để kết thúc.
        - Nhập nội dung chào mừng: Xin chao tu ung dung Python AMQP
        -  Đã gửi: Xin chao tu ung dung Python AMQP - B22DCCN072 - Thào A Bảy
-        Nhập nội dung chào mừng: 
+       - Nhập nội dung chào mừng: 
     + Terminal 1:
        - Đang lắng nghe queue: iot_lab_queue
        - Nhấn Ctrl+C để dừng.
