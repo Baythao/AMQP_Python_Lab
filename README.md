@@ -1,7 +1,10 @@
-## Họ tên thành viên nhóm:
-- Hoàng Khải Hưng B23DCCN365
-- Thào A Bảy B22DCCN072
-- Trịnh Quang Anh B23DCCN055
+## Thành viên nhóm
+
+| STT | Họ và tên | Mã sinh viên |
+| --- | --- | --- |
+| 1 | Hoàng Khải Hưng | B23DCCN365 |
+| 2 | Thào A Bảy | B22DCCN072 |
+| 3 | Trịnh Quang Anh | B23DCCN055 |
 
 # Buổi thực hành: Lập trình Python với giao thức AMQP
 - Bộ bài gồm ba mô hình: 
