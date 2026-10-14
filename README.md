@@ -1,3 +1,8 @@
+# Họ tên thành viên nhóm:
+- Hoàng Khải Hưng B23DCCN365
+- Thào A Bảy B22DCCN072
+- Trịnh Quang Anh B23DCCN055
+
 # Buổi thực hành: Lập trình Python với giao thức AMQP
 - Bộ bài gồm ba mô hình: 
 + producer/consumer qua queue.
