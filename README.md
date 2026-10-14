@@ -120,14 +120,14 @@ Producer gửi JSON mỗi 3 giây vào `sensor_data_queue`. Nhiệt độ đư�
         [critical_queue] Đang chờ cảnh báo mức critical.
         Nhấn Ctrl+C để dừng.
     
-        [critical_queue] Đã nhận: Cảm biến kho lạnh mất kết nối nghiêm trọng.
+        - [critical_queue] Đã nhận: Cảm biến kho lạnh mất kết nối nghiêm trọng.
       
     + Terminal 1:
         Đã kết nối RabbitMQ.
         [warning_queue] Đang chờ cảnh báo mức warning.
         Nhấn Ctrl+C để dừng.
     
-        [warning_queue] Đã nhận: Nhiệt độ phòng máy vượt ngưỡng cảnh báo.
+        - [warning_queue] Đã nhận: Nhiệt độ phòng máy vượt ngưỡng cảnh báo.
     
     - Consumer mới ghi toàn bộ cảnh báo vào iot_alerts.log.
     + File log `iot_alerts.log:`
