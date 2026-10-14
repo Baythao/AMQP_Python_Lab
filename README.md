@@ -1,17 +1,17 @@
 
 # Buổi thực hành: Lập trình Python với giao thức AMQP
 - Bộ bài gồm ba mô hình: 
-+ producer/consumer qua queue.
-+ Telemetry cảm biến IoT dạng JSON.
-+ Định tuyến cảnh báo qua direct exchange.
+    + producer/consumer qua queue.
+    + Telemetry cảm biến IoT dạng JSON.
+    + Định tuyến cảnh báo qua direct exchange.
 
 ## Thành viên nhóm
-
 | STT | Họ và tên | Mã sinh viên |
 | --- | --- | --- |
 | 1 | Hoàng Khải Hưng | B23DCCN365 |
 | 2 | Thào A Bảy | B22DCCN072 |
 | 3 | Trịnh Quang Anh | B23DCCN055 |
+
 ## 1. Chuẩn bị
 - Python 3.x
 - Hệ thống sử dụng `RabbitMQ Server 4.3.6`, chạy trên `Erlang/OTP 28.5.0.7.`
